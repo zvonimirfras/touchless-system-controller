@@ -1,4 +1,4 @@
-# Zvonimir's Touchless System Controller
+# Touchless System Controller
 
 ZTSC allows you to control your desktop system without touching it.
 
