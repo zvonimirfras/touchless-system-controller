@@ -5,7 +5,7 @@ ZTSC allows you to control your desktop system without touching it.
 Except the obvious cool factor, useful usecases include:
 
 - Casual web browsing
-- Following cooking recipes
+- Following cooking recipes without smudging your screen or keyboard
 
 ## Features
 
@@ -28,7 +28,7 @@ Except the obvious cool factor, useful usecases include:
 
 ## Install and run
 
-I found `leapd` to be somewhat unstable so ZTSC contains a convenient script to keep it running.
+I found `leapd` to be somewhat unstable on my machine so ZTSC contains a convenient script to keep it running.
 
 Run on one terminal:
 ```bash
@@ -42,7 +42,7 @@ python2 main.py
 
 ## Settings
 
-- Open [`settings.py`](settings.py).
+- Open [`settings.json`](settings.json).
 - Change.
 - Save.
 - Rerun the app.

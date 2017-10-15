@@ -1,0 +1,32 @@
+{
+    "pointer": {
+        "movement": "relative",
+        "relative_multiplier": 4.2,
+        "key_tap_click": true,
+        "screen_tap_click": true,
+        "swipe_scroll": false,
+        "reverse_swipe_direction": false,
+        "grab_scroll": true,
+        "reverse_grab_scroll_direction_y": false,
+        "reverse_grab_scroll_direction_x": false,
+        "grab_scroll_step": 6
+    },
+
+    "tolerance": {
+        "hand_roll": 20
+    },
+
+    "printer": {
+        "frame_info": false,
+        "hand_info": false,
+        "hand_angles": false,
+        "arm_info": false,
+        "finger_info": false,
+        "finger_bone_info": false,
+        "tools_info": true,
+        "gesture_circle": true,
+        "gesture_swipe": true,
+        "gesture_key_tap": true,
+        "gesture_screen_tap": true
+    }
+}
