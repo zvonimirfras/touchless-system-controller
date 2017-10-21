@@ -40,7 +40,7 @@ sudo ./keep_leapd_resurected.sh
 In a second one run the main application by typing:
 
 ```bash
-python2 main.py
+python2 daemon.py
 ```
 
 ## Settings

@@ -1,25 +1,13 @@
-#!/usr/bin/python2
-
-import sys
-
 from pymouse import PyMouse
 from pykeyboard import PyKeyboard
 
 import Leap
 from Leap import CircleGesture, SwipeGesture
 
-from settings import Settings
+from daemon.pointer import Pointer
+from daemon.printer import Printer
 
-from pointer import Pointer
-from printer import Printer
-
-## TODO add features:
-## limit swipe to directions (don't swipe unless the direction is correct in all directions, i.e. not diagonal)
-## press mouse button by moving the finger towards the screen (Leap.Gesture.TYPE_SCREEN_TAP?)
-## scroll with grabbing the screen with a fist and dragging
-
-
-class MainListener(Leap.Listener):
+class MainLeapListener(Leap.Listener):
     """Leap listener that handles all the user interactions"""
     finger_names = ['Thumb', 'Index', 'Middle', 'Ring', 'Pinky']
     bone_names = ['Metacarpal', 'Proximal', 'Intermediate', 'Distal']
@@ -27,14 +15,14 @@ class MainListener(Leap.Listener):
 
     def __init__(self, settings):
         Leap.Listener.__init__(self);
-        self.settings = settings
 
-    def on_init(self, controller):
+        self.settings = settings
         self.mouse = PyMouse()
         self.keyboard = PyKeyboard()
         self.pointer = Pointer(self.mouse, self.settings)
         self.printer = Printer(self.settings)
 
+    def on_init(self, controller):
         print("Initialized")
 
 
@@ -114,27 +102,3 @@ class MainListener(Leap.Listener):
                         and palm_roll > -90 - self.settings.tolerance["hand_roll"] \
                         and palm_roll < -90 + self.settings.tolerance["hand_roll"]:  # prevent false positives
                         self.mouse.click(mouse_pos[0], mouse_pos[1], 9)
-
-
-def main():
-    # Create a main listener and controller
-    settings = Settings()
-    listener = MainListener(settings)
-    controller = Leap.Controller()
-
-    # Have the main listener receive events from the controller
-    controller.add_listener(listener)
-
-    # Keep this process running until Enter is pressed
-    print("Press Enter to quit...")
-    try:
-        sys.stdin.readline()
-    except KeyboardInterrupt:
-        pass
-    finally:
-        # Remove the sample listener when done
-        controller.remove_listener(listener)
-
-
-if __name__ == "__main__":
-    main()
