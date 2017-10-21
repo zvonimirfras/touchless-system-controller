@@ -24,6 +24,7 @@ Except the obvious cool factor, useful usecases include:
 - LeapMotion drivers
 - LeapMotion python SDK
 - PyUserInput
+
 (`sudo pip2 install pyuserinput`)
 
 ## Install and run
@@ -31,11 +32,13 @@ Except the obvious cool factor, useful usecases include:
 I found `leapd` to be somewhat unstable on my machine so ZTSC contains a convenient script to keep it running.
 
 Run on one terminal:
+
 ```bash
 sudo ./keep_leapd_resurected.sh
 ```
 
 In a second one run the main application by typing:
+
 ```bash
 python2 main.py
 ```
@@ -46,7 +49,6 @@ python2 main.py
 - Change.
 - Save.
 - Rerun the app.
-
 
 ## Tested on
 
