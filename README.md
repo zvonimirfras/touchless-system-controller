@@ -18,6 +18,10 @@ Except the obvious cool factor, useful usecases include:
 - Circle to switch browser tabs
 - Reverse swipe and scroll directions
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/SP5S4oF42Bu9x1y17uGhYjTH/zvonimirfras/touchless-system-controller'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/SP5S4oF42Bu9x1y17uGhYjTH/zvonimirfras/touchless-system-controller.svg' />
+</a>
+
 ## Requirements
 
 - LeapMotion controller
