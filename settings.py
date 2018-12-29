@@ -10,6 +10,9 @@ class Settings():
         self.load(settings_path)
 
     def __getattr__(self, name):
+        if name not in self.data:
+            return None
+
         return self.data[name]
 
     def load(self, settings_path="settings.json"):
