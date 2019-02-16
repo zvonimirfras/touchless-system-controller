@@ -1,4 +1,12 @@
 {
+    "leap": {
+        "enabled": false
+    },
+
+    "microphone": {
+        "device_index": 0
+    },
+
     "pointer": {
         "movement": "relative",
         "relative_multiplier": 4.2,
@@ -9,7 +17,7 @@
         "grab_scroll": true,
         "reverse_grab_scroll_direction_y": false,
         "reverse_grab_scroll_direction_x": false,
-        "grab_scroll_step": 6
+        "grab_scroll_step": 9
     },
 
     "tolerance": {
