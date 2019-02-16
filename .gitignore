@@ -109,3 +109,4 @@ ENV/
 
 # project related stuff
 speech_cache/*
+speech_cache.json
