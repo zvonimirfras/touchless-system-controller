@@ -30,6 +30,16 @@ Except the obvious cool factor, useful usecases include:
 ### Graphical User Interface a.k.a. GUI Controller
 
 - PyQt5 (`pip3 install pyqt5` or `sudo pip3 install pyqt5`)
+- psutil (`pip3 install psutil` or `sudo pip3 install psutil`; needed to check if `leapd` is running)
+
+### Audio commands
+
+PyAudio (`pip3 install PyAudio`)
+SpeechRecognition (`pip3 install SpeechRecognition`)
+pyttsx3 (`pip3 install pyttsx3`)
+gTTS (`pip3 install gTTS`)
+playsound (`pip3 install playsound`)
+nltk (`pip3 install nltk`)
 
 ## Install and run
 
